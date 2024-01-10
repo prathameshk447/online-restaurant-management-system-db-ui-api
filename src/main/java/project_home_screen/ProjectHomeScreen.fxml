@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" fx:controller="project_home_screen.ProjectHomeScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="719.0" fitWidth="1300.0" layoutY="8.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./menu.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="FoodMenu" layoutX="438.0" layoutY="164.0" mnemonicParsing="false" onAction="#FoodMenu" prefHeight="64.0" prefWidth="425.0" style="-fx-background-color: #ff5d00;" text="FoodMenu" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="Customers" layoutX="438.0" layoutY="295.0" mnemonicParsing="false" onAction="#Customers" prefHeight="64.0" prefWidth="425.0" style="-fx-background-color: #ff5d00;" text="Customers" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back" layoutX="401.0" layoutY="466.0" mnemonicParsing="false" onAction="#Back" prefHeight="28.0" prefWidth="498.0" style="-fx-background-color: #ffffff;" text="Back">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

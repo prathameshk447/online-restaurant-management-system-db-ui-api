@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" fx:controller="projectlogin.ProjectLoginScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="230.0" fitWidth="402.0" layoutX="449.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./Restaurantlogo.jpeg" />
+         </image>
+      </ImageView>
+      <Button fx:id="Login" layoutX="522.0" layoutY="607.0" mnemonicParsing="false" onAction="#projectlogin" prefHeight="39.0" prefWidth="231.0" text="Login" />
+      <Label layoutX="562.0" layoutY="305.0" prefHeight="99.0" prefWidth="151.0" text="Login">
+         <font>
+            <Font name="Sitka Text" size="53.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Email" layoutX="373.0" layoutY="439.0" prefHeight="48.0" prefWidth="529.0" promptText="Email" />
+      <TextField fx:id="Password" layoutX="373.0" layoutY="514.0" prefHeight="48.0" prefWidth="529.0" promptText="Password" />
+      <Button fx:id="Signup" layoutX="467.0" layoutY="741.0" mnemonicParsing="false" onAction="#Signup" prefHeight="30.0" prefWidth="341.0" style="-fx-background-color: #d2f3ff;" text="Sign up">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffab45" height="850.0" stroke="BLACK" strokeType="INSIDE" width="291.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffab45" height="850.0" layoutX="1009.0" stroke="BLACK" strokeType="INSIDE" width="291.0" />
+   </children>
+</Pane>
