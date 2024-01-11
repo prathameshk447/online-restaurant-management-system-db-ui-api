@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.text.*?>
 <?import javafx.scene.paint.*?>
 <?import javafx.scene.control.*?>
@@ -9,25 +10,37 @@
 
 <Pane maxHeight="-Infinity" fx:controller="project_home_screen.ProjectHomeScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="719.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <ImageView fitHeight="719.0" fitWidth="1300.0" layoutY="8.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@./menu.jpeg" />
-         </image>
-      </ImageView>
-      <Button fx:id="FoodMenu" layoutX="438.0" layoutY="164.0" mnemonicParsing="false" onAction="#FoodMenu" prefHeight="64.0" prefWidth="425.0" style="-fx-background-color: #ff5d00;" text="FoodMenu" textFill="WHITE">
+      <Button fx:id="FoodMenu" layoutX="514.0" layoutY="262.0" mnemonicParsing="false" onAction="#FoodMenu" prefHeight="64.0" prefWidth="425.0" style="-fx-background-color: #ff5d00;" text="FoodMenu" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="30.0" />
          </font>
       </Button>
-      <Button fx:id="Customers" layoutX="438.0" layoutY="295.0" mnemonicParsing="false" onAction="#Customers" prefHeight="64.0" prefWidth="425.0" style="-fx-background-color: #ff5d00;" text="Customers" textFill="WHITE">
+      <Button fx:id="Customers" layoutX="514.0" layoutY="391.0" mnemonicParsing="false" onAction="#Customers" prefHeight="64.0" prefWidth="425.0" style="-fx-background-color: #ff5d00;" text="Customers" textFill="WHITE">
          <font>
             <Font name="System Bold Italic" size="30.0" />
          </font>
       </Button>
-      <Button fx:id="Back" layoutX="401.0" layoutY="466.0" mnemonicParsing="false" onAction="#Back" prefHeight="28.0" prefWidth="498.0" style="-fx-background-color: #ffffff;" text="Back">
+      <Button fx:id="Back" layoutX="478.0" layoutY="534.0" mnemonicParsing="false" onAction="#Back" prefHeight="28.0" prefWidth="498.0" style="-fx-background-color: #ffffff;" text="Back">
          <font>
             <Font name="System Bold Italic" size="18.0" />
          </font>
       </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffaa00" height="719.0" stroke="BLACK" strokeType="INSIDE" width="331.0" />
+      <ImageView fitHeight="212.0" fitWidth="221.0" layoutX="55.0" layoutY="231.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@./rest.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1067.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            
+            <Image url="@./sp.jpeg" />
+         </image>
+      </ImageView>
+      <Label layoutX="1095.0" layoutY="181.0" prefHeight="64.0" prefWidth="144.0" text="PROJECT">
+         <font>
+            <Font name="Bodoni MT Bold" size="33.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

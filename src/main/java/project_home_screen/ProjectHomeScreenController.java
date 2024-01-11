@@ -3,6 +3,7 @@ package project_home_screen;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import project_foodmanagement_screen.ProjectFoodmanagementScreen;
 
 import projectlogin.ProjectLoginScreen;
 
@@ -19,7 +20,7 @@ public class ProjectHomeScreenController {
 	private Button Back;
 	
 	public void FoodMenu(ActionEvent event) throws Exception {
-		
+		ProjectFoodmanagementScreen.showFoodmanagementScreen ( );
 	}
 public void Customers(ActionEvent event) throws Exception {
 	

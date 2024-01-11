@@ -38,7 +38,7 @@ public class ProjectLoginScreenController {
 		
 		boolean projectloginstatus = ProjectLoginScreenController.ValidateEmailAndPassword(Email.getText(),Password.getText());
 		if(projectloginstatus) {
-			new ProjectHomeScreen().show();
+			
 		}else {
 			
 		}
@@ -49,7 +49,7 @@ public  void Signup(ActionEvent event) throws Exception {
 		
 	}
 	
-	public static boolean ValidateEmailAndPassword(String email,String password){
+	public static boolean ValidateEmailAndPassword(String Email,String Password){
 		LoginRequest loginRequest = new LoginRequest();
 		loginRequest.setEmail("spmanagement");
 		loginRequest.setPassword("Test@123");
@@ -57,7 +57,7 @@ public  void Signup(ActionEvent event) throws Exception {
 		LoginResponse response;
 		try {
 			response = RestUtil.sendPostRequest(
-				"http://localhost:8086/auth/validate",
+				"http://localhost:8087/auth/validate",
 				LoginResponse.class,
 				loginRequest
 				);
