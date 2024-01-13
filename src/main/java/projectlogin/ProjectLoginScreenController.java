@@ -16,6 +16,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import project_adduser.ProjectAddUserScreen;
 import project_home_screen.ProjectHomeScreen;
 
 public class ProjectLoginScreenController {
@@ -45,7 +46,7 @@ public class ProjectLoginScreenController {
 	}
 	
 public  void Signup(ActionEvent event) throws Exception {
-		
+	ProjectAddUserScreen.showAddUserScreen ( );
 		
 	}
 	
@@ -63,6 +64,8 @@ public  void Signup(ActionEvent event) throws Exception {
 				);
 				if(response.getStatus().equals("Success"))
 						  return true;
+				ProjectHomeScreen projectHomeScreen = new ProjectHomeScreen();
+				projectHomeScreen.show();
 			}catch (Exception e) {
 				e.printStackTrace();
 			}

@@ -1,4 +1,5 @@
-package project_foodmanagement_screen;
+package project_adduser;
+
 
 
 
@@ -11,15 +12,15 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 
-public abstract class ProjectFoodmanagementScreen  extends  Application {
+public abstract class ProjectAddUserScreen  extends  Application {
 	
 
 	
-	public static void showFoodmanagementScreen ( ) throws Exception {
+	public static void showAddUserScreen ( ) throws Exception {
 		try {
 			
 			@SuppressWarnings("deprecation")
-			Parent actorGroup = FXMLLoader.load(new URL("file:///C|/Users/user//eclipse-workspace//online-restaurant-management-system-ui-db-api/src/main/java/project_foodmanagement_screen//FoodmanagementScreen.fxml"));
+			Parent actorGroup = FXMLLoader.load(new URL("file:///C|/Users/user//eclipse-workspace//online-restaurant-management-system-ui-db-api/src/main/java/project_adduser//Adduser.fxml"));
 			
 			Scene scene = new Scene(actorGroup, 1310, 775);
 			StageFactory.stage.setScene(scene);
