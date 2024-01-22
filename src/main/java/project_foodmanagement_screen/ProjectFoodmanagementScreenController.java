@@ -4,7 +4,7 @@ package project_foodmanagement_screen;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-
+import project_adduser.ProjectAddUserScreen;
 import project_home_screen.ProjectHomeScreen;
 
 
@@ -26,7 +26,7 @@ public class ProjectFoodmanagementScreenController  {
 	private Button Back;
 	
 	public void AddFood(ActionEvent event) throws Exception {
-		
+		ProjectAddUserScreen.showAddUserScreen ( );
 		
 	}
 public void EditFood(ActionEvent event) throws Exception {

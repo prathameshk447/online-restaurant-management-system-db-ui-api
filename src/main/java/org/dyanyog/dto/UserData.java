@@ -1,12 +1,26 @@
 package org.dyanyog.dto;
 
+import org.springframework.stereotype.Component;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@Component
 public class UserData {
-	
+
 	private String username;
 	private String password;
 	private String email;
 	private String age;
-	
+	private long userId;
+
+	public long getUserId() {
+		return userId;
+	}
+
+	public void setUserId(long userId) {
+		this.userId = userId;
+	}
+
 	public String getUsername() {
 		return username;
 	}
@@ -38,7 +52,5 @@ public class UserData {
 	public void setAge(String age) {
 		this.age = age;
 	}
-
-	
 
 }

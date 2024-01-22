@@ -41,7 +41,8 @@ public class ProjectLoginScreenController {
 		if(projectloginstatus) {
 			
 		}else {
-			
+			ProjectHomeScreen projectHomeScreen = new ProjectHomeScreen();
+			projectHomeScreen.show();
 		}
 	}
 	
@@ -50,7 +51,7 @@ public  void Signup(ActionEvent event) throws Exception {
 		
 	}
 	
-	public static boolean ValidateEmailAndPassword(String Email,String Password){
+	public static boolean ValidateEmailAndPassword(String email,String password){
 		LoginRequest loginRequest = new LoginRequest();
 		loginRequest.setEmail("spmanagement");
 		loginRequest.setPassword("Test@123");
@@ -58,14 +59,13 @@ public  void Signup(ActionEvent event) throws Exception {
 		LoginResponse response;
 		try {
 			response = RestUtil.sendPostRequest(
-				"http://localhost:8087/auth/validate",
+				"http://localhost:8085/auth/validate",
 				LoginResponse.class,
 				loginRequest
 				);
 				if(response.getStatus().equals("Success"))
 						  return true;
-				ProjectHomeScreen projectHomeScreen = new ProjectHomeScreen();
-				projectHomeScreen.show();
+				
 			}catch (Exception e) {
 				e.printStackTrace();
 			}

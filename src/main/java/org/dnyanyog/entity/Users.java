@@ -1,11 +1,42 @@
-package org.dyanyog.dto;
+package org.dnyanyog.entity;
 
-public class AddUserRequest {
+import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Component
+@Table
+public class Users {
+
+	@GeneratedValue
+	@Id
+	@Column
+	private long userID;
+
+	@Column
 	private String username;
+
+	@Column
 	private String password;
+
+	@Column
 	private String email;
+
+	@Column
 	private String age;
+
+	public long getUserID() {
+		return userID;
+	}
+
+	public void setUserID(long userID) {
+		this.userID = userID;
+	}
 
 	public String getUsername() {
 		return username;
